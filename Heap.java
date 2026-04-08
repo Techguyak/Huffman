@@ -58,6 +58,9 @@ public class Heap<T extends Comparable<T>> {
             downside(min);
         }
     }
+    public int size() {
+        return heap.size();
+    } 
     public ArrayList<T> heapSort() throws Exception {
         if(heap.isEmpty()) {
             throw new Exception("Heap is empty");
@@ -78,7 +81,7 @@ public class Heap<T extends Comparable<T>> {
         heap.insert(2);
         heap.insert(8);
 
-        System.out.println(heap.heapSort().toString());
+        System.out.println(heap.size());
     }
 }
 
