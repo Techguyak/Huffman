@@ -106,3 +106,7 @@ public class Huffman {
         System.out.println("Decoded: " + decoded);
     }
 }
+
+//huffman encoding is a lossless data compression algorithm that assigns variable-length codes to input characters, with shorter codes assigned to more frequent characters. The algorithm builds a binary tree based on the frequency of characters in the input message, and then generates the codes by traversing the tree. The resulting encoded message can be decoded back to the original message using the same tree structure.
+
+// The time complexity of the Huffman encoding algorithm is O(n log n), where n is the number of unique characters in the input message. This is because we need to build a binary tree based on the frequency of characters, which takes O(n log n) time. The encoding and decoding processes take O(m) time, where m is the length of the input message, since we need to traverse the tree for each character in the message. Overall, the algorithm is efficient for compressing data with a large number of unique characters.
